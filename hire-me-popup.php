@@ -1,9 +1,10 @@
 <?php
 /*
- * Plugin Name: Inbio Hire Me Popup
+ * Plugin Name: Hire Me Popup
  * Description: Adds a draggable “Hire Me” popup like the one seen on the Inbio demo.  The popup automatically appears after a short delay on the front‑end of your site and can be dragged anywhere on the screen.  A close button is provided to dismiss it.  You can replace the avatar image in <code>assets/img/avatar.png</code> with your own photo.
  * Version: 1.0.0
- * Author: ChatGPT
+ * Author: Bisnu Kundu
+ * Author URI: https://bisnukundu.netlify.app/
  * License: GPL2
  */
 
