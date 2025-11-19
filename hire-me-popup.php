@@ -406,6 +406,7 @@ class Inbio_Hire_Me_Popup {
                 submit_button();
                 ?>
             </form>
+            <p>© 2025 All rights reserved. Created by <a href="https://bisnukundu.netlify.app/">Bisnu Kundu</a>.</p>
         </div>
         <?php
     }
