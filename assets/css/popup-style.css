@@ -1,0 +1,110 @@
+/*
+ * Styles for the Inbio Hire Me popup.
+ * These rules mirror the look and feel of the Inbio theme demo popup while keeping things simple and customizable.
+ */
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateX(-50%) translateY(100%); /* শুরুতে নিচে থাকবে */
+  }
+  100% {
+    transform: translateX(-50%) translateY(0); /* শেষেই মাঝখানে আসবে */
+  }
+}
+
+
+
+
+#inbio-hire-popup {
+    
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    z-index: 9999;
+     transform: translateX(-50%) translateY(0%);
+    background: linear-gradient(135deg, #4b0082, #9333ea, #e11d74);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(22, 19, 19, 0.3);
+    overflow: hidden;
+    max-width: 90vw;
+    width: 660px;
+    cursor: move; /* show move cursor so visitors know it can be dragged */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+#inbio-hire-popup .inbio-popup-inner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 16px;
+}
+
+/* Avatar styles */
+#inbio-hire-popup .inbio-popup-avatar img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Close button styles */
+#inbio-hire-popup .inbio-popup-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Text section */
+#inbio-hire-popup .inbio-popup-text {
+    flex: 1;
+}
+
+#inbio-hire-popup .inbio-popup-title {
+    margin: 0 0 4px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#inbio-hire-popup .inbio-popup-subtitle {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Action button */
+#inbio-hire-popup .inbio-popup-action {
+    margin-left: auto;
+}
+
+#inbio-hire-popup .inbio-popup-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+#inbio-hire-popup .inbio-popup-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    #inbio-hire-popup {
+        width: 90vw;
+        left: 5vw;
+        bottom: 10px;
+    }
+}
